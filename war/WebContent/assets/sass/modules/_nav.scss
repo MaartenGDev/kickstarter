@@ -1,3 +1,17 @@
-.nav{
-  background-color: $nephritis;
+.nav {
+  background-color: $turquoise;
+
+  &__list {
+    margin: 0;
+  }
+  &__item {
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: $white;
+
+    &--title{
+      font-weight: bold;
+    }
+  }
 }
