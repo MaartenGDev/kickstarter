@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<project name="kickstarter" basedir="." default="build">
+    <property name="name" value="kickstarter"/>
+    <property name="src.dir" value="src"/>
+    <property name="web.dir" value="war"/>
+    <property name="build.dir" value="${web.dir}/WEB-INF/classes"/>
+    <property name="deploy.path" value="/Users/maarten/dev/java/webapps/"/>
+
+    <path id="master-classpath">
+        <fileset dir="/usr/local/Cellar/tomcat/8.5.8/libexec/lib/">
+            <include name="servlet-api.jar"/>
+        </fileset>
+    </path>
+
+    <target name="clean" description="Haal de bezem erdoor">
+        <echo>Clean: De bezem erdoor.</echo>
+        <delete>
+            <fileset dir="${build.dir}">
+                <include name="**/*.class"/>
+            </fileset>
+        </delete>
+    </target>
+
+    <target name="build" depends="clean" description="Create classes folder and compile files.">
+        <echo>Build: compile files...</echo>
+
+        <mkdir dir="${build.dir}"/>
+
+        <javac destdir="${build.dir}" source="7" target="7">
+            <src path="${src.dir}"/>
+            <classpath refid="master-classpath"/>
+        </javac>
+    </target>
+
+
+    <target name="build-war" depends="build">
+        <echo>War: Make war...</echo>
+
+        <war destfile = "${name}.war" webxml = "${web.dir}/WEB-INF/web.xml">
+            <fileset dir = "${web.dir}/WebContent">
+                <include name = "**/*.*"/>
+            </fileset>
+
+            <classes dir = "${build.dir}"/>
+        </war>
+
+    </target>
+    <target name="deploy" depends="build-war" description="Deploy application">
+        <echo>Deploy: Copying files...</echo>
+        <copy todir="${deploy.path}" preservelastmodified="true">
+            <fileset dir=".">
+                <include name="*.war"/>
+            </fileset>
+        </copy>
+    </target>
+
+
+</project>
