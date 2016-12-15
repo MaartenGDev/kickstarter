@@ -43,15 +43,15 @@
 
             <classes dir = "${build.dir}"/>
         </war>
-
     </target>
+
     <target name="deploy" depends="build-war" description="Deploy application">
         <echo>Deploy: Copying files...</echo>
-        <copy todir="${deploy.path}" preservelastmodified="true">
+        <move todir="${deploy.path}" preservelastmodified="true">
             <fileset dir=".">
                 <include name="*.war"/>
             </fileset>
-        </copy>
+        </move>
     </target>
 
 
