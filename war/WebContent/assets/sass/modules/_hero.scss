@@ -1,6 +1,7 @@
 .hero {
   background-color: $turquoise;
   color: white;
+  padding-bottom: 50px;
 
   &__title {
     font-size: 40px;
@@ -23,9 +24,12 @@
   &__image {
     width: calc(100% - 250px);
     display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   }
   &__pricing {
     display: inline-block;
     float: right;
+    padding: 5px;
+    border-top: 2px solid $white;
   }
 }

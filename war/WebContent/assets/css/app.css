@@ -2,6 +2,14 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif; }
 
+.l-cards {
+  max-width: 680px;
+  margin: 30px auto 0 auto; }
+
+.l-features {
+  max-width: 960px;
+  margin: 0 auto; }
+
 .nav {
   background-color: #1abc9c; }
   .nav__list {
@@ -16,7 +24,8 @@ body {
 
 .hero {
   background-color: #1abc9c;
-  color: white; }
+  color: white;
+  padding-bottom: 50px; }
   .hero__title {
     font-size: 40px;
     font-weight: 300;
@@ -32,10 +41,13 @@ body {
     max-width: 960px; }
   .hero__image {
     width: calc(100% - 250px);
-    display: inline-block; }
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
   .hero__pricing {
     display: inline-block;
-    float: right; }
+    float: right;
+    padding: 5px;
+    border-top: 2px solid #ffffff; }
 
 .pricing__title {
   font-size: 23px;
@@ -43,3 +55,64 @@ body {
 
 .pricing__name {
   margin: 0; }
+
+.pricing__button {
+  background-color: white;
+  border-radius: 5px;
+  color: #1abc9c;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+  margin-top: 20px;
+  font-weight: bold; }
+
+.section {
+  text-align: center;
+  padding-top: 30px; }
+  .section__title {
+    color: #34495e;
+    font-size: 25px;
+    margin-top: 0; }
+  .section__description {
+    font-weight: 300; }
+  .section--gray {
+    background-color: #ecf0f1; }
+
+.card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #ffffff;
+  padding: 5px;
+  width: calc((100% - 79px) / 3);
+  display: inline-block; }
+  .card--middle {
+    margin: 0 20px; }
+  .card__icon {
+    font-size: 55px;
+    padding-top: 30px; }
+    .card__icon--clock {
+      color: #2a84bf; }
+    .card__icon--signs {
+      color: #34495e; }
+    .card__icon--flag {
+      color: #1abc9c; }
+
+.feature {
+  width: 100%;
+  margin-top: 200px; }
+  .feature__highlight {
+    border-bottom: 2px solid #5465c7; }
+  .feature__title {
+    font-size: 30px; }
+  .feature__preview {
+    width: 100%; }
+  .feature__image {
+    display: inline-block;
+    width: calc(100% - 350px); }
+  .feature__description {
+    float: left;
+    width: 300px;
+    display: inline-block; }
+    .feature__description--left {
+      float: left; }
+    .feature__description--right {
+      float: right; }

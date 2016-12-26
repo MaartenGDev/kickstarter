@@ -1,0 +1,29 @@
+.card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: $white;
+  padding: 5px;
+
+  width: calc((100% - 79px) / 3);
+  display: inline-block;
+
+  &--middle {
+    margin: 0 20px;
+  }
+
+  &__icon {
+    font-size: 55px;
+    padding-top: 30px;
+
+    &--clock {
+      color: $belize-hole;
+    }
+
+    &--signs {
+      color: $wet-asphalt;
+    }
+
+    &--flag {
+      color: $turquoise;
+    }
+  }
+}

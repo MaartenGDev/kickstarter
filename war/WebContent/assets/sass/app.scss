@@ -1,6 +1,12 @@
 @import "base/base";
 @import "base/settings";
 
+@import "layout/cards";
+@import "layout/features";
+
 @import "modules/nav";
 @import "modules/hero";
 @import "modules/pricing";
+@import "modules/section";
+@import "modules/card";
+@import "modules/feature";
