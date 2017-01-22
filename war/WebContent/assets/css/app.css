@@ -165,5 +165,18 @@ body {
     width: 100%; }
 
 .article__text {
-  line-height: 120%;
+  line-height: 1.58;
+  font-size: 21px;
+  font-weight: 400;
   font-family: 'Lato', sans-serif; }
+
+.footer {
+  background-color: #fafafa;
+  padding: 20px;
+  text-align: center;
+  position: relative; }
+  .footer__form {
+    background-color: #7f8c8d;
+    max-width: 500px;
+    text-align: left;
+    margin: 0 auto; }

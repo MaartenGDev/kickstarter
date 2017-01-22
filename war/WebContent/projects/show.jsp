@@ -15,6 +15,14 @@
                 voluptatem. Id, iusto.</p>
         </article>
     </section>
+
+    <footer class="footer">
+        <section class="footer__form">
+            <input type="text" class="form__input" name="Name">
+            <input type="text" class="form__input" name="Email">
+            <input type="text" class="form__input" name="Amount">
+        </section>
+    </footer>
 </main>
 </body>
 </html>
