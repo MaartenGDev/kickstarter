@@ -10,7 +10,7 @@ PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
 
     <servlet-mapping>
         <servlet-name>hello</servlet-name>
-        <url-pattern>/hellobuild</url-pattern>
+        <url-pattern>/projects/</url-pattern>
     </servlet-mapping>
 </web-app>
 
