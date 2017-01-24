@@ -13,7 +13,7 @@
             new holistic interactive enterprise internet.
         </section>
         <section class="project__links">
-            <button class="btn btn--primary">View</button>
+            <a href="projects/show.jsp?project=1" class="btn btn--primary">View</a>
         </section>
     </article>
 
@@ -34,7 +34,7 @@
         </section>
 
         <section class="project__links">
-            <button class="btn btn--primary">View</button>
+            <a href="projects/show.jsp?project=2" class="btn btn--primary">View</a>
         </section>
     </article>
     <section class="clear"></section>
@@ -42,7 +42,7 @@
 
     <article class="project pure-u-11-24">
         <section class="project__header">
-            <h1 class="project__title">Compass 3.0</h1>
+            <h1 class="project__title">BreadMachine</h1>
             <span class="project__user"><i class="fa fa-user"></i> FreshBread4U</span>
         </section>
         <section class="project__preview">
@@ -55,7 +55,8 @@
         </section>
 
         <section class="project__links">
-            <button class="btn btn--primary">View</button>
+            <a href="projects/show.jsp?project=3" class="btn btn--primary">View</a>
+
         </section>
     </article>
     <section class="pure-u-1-12"></section>
@@ -75,7 +76,7 @@
         </section>
 
         <section class="project__links">
-            <button class="btn btn--primary">View</button>
+            <a href="projects/show.jsp?project=4" class="btn btn--primary">View</a>
         </section>
     </article>
     <section class="clear"></section>

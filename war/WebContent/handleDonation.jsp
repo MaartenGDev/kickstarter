@@ -1,12 +1,22 @@
 <%@ page import="me.maartendev.UserBean" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" session="true" %>
 
 <jsp:include page="navigation.jsp"/>
 <%
-    UserBean user = new UserBean();
-    user.addDonation(request.getParameter("name"), Integer.parseInt(request.getParameter("amount")));
+    UserBean user = null;
 
-    session.setAttribute("user", user);
+    if (session.getAttribute("user") == null) {
+        user = new UserBean();
+    } else {
+        user = (UserBean) session.getAttribute("user");
+
+    }
+    if (request.getParameter("name") != null) {
+        user.addDonation(request.getParameter("name"), Integer.parseInt(request.getParameter("amount")));
+
+        session.setAttribute("user", user);
+    }
+
 %>
 <main>
     <section class="container container--fluid">

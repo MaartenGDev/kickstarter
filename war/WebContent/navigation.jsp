@@ -8,8 +8,8 @@
 <body>
 <nav class="nav">
     <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" href="/">Home</a></li>
-        <li class="nav__item"><a class="nav__link" href="/projects">Projects</a></li>
-        <li class="nav__item"><a class="nav__link" href="/projects">Account</a></li>
+        <li class="nav__item"><a class="nav__link" href="/kickstarter">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="/kickstarter">Projects</a></li>
+        <li class="nav__item"><a class="nav__link" href="/kickstarter">The Team</a></li>
     </ul>
 </nav>

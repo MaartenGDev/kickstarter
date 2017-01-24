@@ -47,4 +47,15 @@ public class UserBean implements java.io.Serializable {
         return donations;
     }
 
+    public int getTopDonation() {
+        int maxAmount = 0;
+
+
+        for (ProjectDonation donation : this.getDonations()) {
+            maxAmount = Math.max(donation.getAmount(), maxAmount);
+        }
+
+        return maxAmount;
+    }
+
 }
