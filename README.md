@@ -3,7 +3,7 @@
 
 
 # Pages
-![Landig page](/war/WebContent/assets/img/landing.png)
-![Project List](/war/WebContent/assets/img/projectList.png)
-![Donate Form](/war/WebContent/assets/img/donateForm.png)
-![Donate Result](/war/WebContent/assets/img/donateResult.png)
+![Landig page](/war/WebContent/assets/img/result/landing.png)
+![Project List](/war/WebContent/assets/img/result/projectList.png)
+![Donate Form](/war/WebContent/assets/img/result/donateForm.png)
+![Donate Result](/war/WebContent/assets/img/result/donateResult.png)
